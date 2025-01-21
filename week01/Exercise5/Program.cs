@@ -1,28 +1,54 @@
 using System;
 
 class Program
+
 {
   
-  static void DisplayMessage()
+
+  static void Main()
+  {
+    
+    DisplayMessage();
+    string UserName = PromptUserName();
+    int FavoriteNumber = FavoriteNumberFunction();
+    int SquaredNumber = SquareNumber(FavoriteNumber);
+    Console.WriteLine($"Your username is {UserName}, the square of your favorite number is {SquaredNumber}.");
+  }
+
+
+static void DisplayMessage()
 {
     
-    Console.WriteLine("Welcome to the program!");
+Console.WriteLine("Welcome to the program!");
 
 }
 
-static void PromptUserName(string UserName)
+
+
+static string PromptUserName()
 {
-    
-    Console.WriteLine("Choose a User Name.")
-    UserName = (Conesole.ReadLine);
+
+Console.WriteLine("Please enter your User Name. ");
+string UserName = (Console.ReadLine());
+return UserName; 
+
+}  
+
+
+static int FavoriteNumberFunction()
+{
+
+Console.WriteLine("What is your favorite number? ");
+int FavoriteNumber = int.Parse(Console.ReadLine());
+return FavoriteNumber;
 
 }
 
-static void FavoriteNumberFunction(int FavoriteNumber)
+
+static int SquareNumber (int Number)
 {
 
-Console.WriteLine("What is your favorite number?")
-FavoriteNumber = int.Parse(Console.ReadLine);
+return Number * Number;
 
 }
 
