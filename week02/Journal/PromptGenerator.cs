@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 
 
 public class PromptGenerator
@@ -7,6 +8,9 @@ public class PromptGenerator
 
     public Random _random = new Random();
 
+
+
+    //These prompts were taken from another database. 
 
     public List<string> _prompts = new List<string>
         {
@@ -669,10 +673,8 @@ public class PromptGenerator
 
         public string GetRandomPrompt()
     {
-        
-        return "";
+        int index = _random.Next(_prompts.Count);
+        return _prompts[index];
     }
 
 }
-
-
