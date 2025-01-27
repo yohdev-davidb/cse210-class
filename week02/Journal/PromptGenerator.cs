@@ -10,7 +10,7 @@ public class PromptGenerator
 
 
 
-    //These prompts were taken from another database. 
+    //These prompts were taken from another database. They are not orginal work. I didn't think it mattered, I wanted to have a lot of choices. 
 
     public List<string> _prompts = new List<string>
         {
