@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 public class PromptGenerator
 {
 
-    public Random _random = new Random();
+    private Random _random = new Random();
 
 
 
@@ -671,7 +671,7 @@ public class PromptGenerator
 
          };
 
-        public string GetRandomPrompt()
+    public string GetRandomPrompt()
     {
         int index = _random.Next(_prompts.Count);
         return _prompts[index];
