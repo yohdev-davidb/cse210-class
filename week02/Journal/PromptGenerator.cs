@@ -1,19 +1,14 @@
 using System;
-using Systems.Collections.Generic;
+using System.Collections.Generic;
 
 
-
-public class PromptGenerator; 
+public class PromptGenerator
 {
-    public string GetRandomPrompt()
-    {
+
+    public Random _random = new Random();
 
 
-
-    }
-
-
-_prompts = new List<string>
+    public List<string> _prompts = new List<string>
         {
             "Who was the most interesting person I interacted with today?",
             "What was the best part of my day?",
@@ -670,6 +665,13 @@ _prompts = new List<string>
             "Write about how you manage or think about time.",
             "Describe a skill you’d like to pass on to others, and why it’s important to you."
 
-              }
+         };
+
+        public string GetRandomPrompt()
+    {
+
+
+        return "";
+    }
 
 }
