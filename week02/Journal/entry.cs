@@ -18,9 +18,9 @@ public class Entry
 
     public void Display()
     {
-        Console.WriteLine("$Date:{_date}");
-        Console.WriteLine("$Prompt:{_promptText}");
-        Console.WriteLine("$Respone:{_entryText}");
+        Console.WriteLine($"Date: {_date}");
+        Console.WriteLine($"Prompt: {_promptText}");
+        Console.WriteLine($"Response: {_entryText}");
         Console.WriteLine("---------------------------");
     }
 
