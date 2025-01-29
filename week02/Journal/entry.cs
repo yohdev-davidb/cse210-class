@@ -24,7 +24,16 @@ public class Entry
         Console.WriteLine("---------------------------");
     }
 
+    public override string ToString()
+    {
+        return $"{_date}|{_promptText}|{_entryText}";
+    }
 
+    public static Entry FromString(string entryLine)
+    {
+        string[] parts = entryLine.Split('|');
+        return new Entry(parts[0], parts[1], parts[2]);
+    }
 
 }
 

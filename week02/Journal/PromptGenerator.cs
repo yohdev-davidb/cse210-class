@@ -1,19 +1,14 @@
 using System;
 using System.Collections.Generic;
-using System.Linq.Expressions;
-
 
 public class PromptGenerator
 {
-
     private Random _random = new Random();
 
+// I pulled this list of questions from another database. This is note my work. I wanted you to konw. 
 
-
-    //These prompts were taken from another database. They are not orginal work. I didn't think it mattered, I wanted to have a lot of choices. 
-
-    public List<string> _prompts = new List<string>
-        {
+    private List<string> _prompts = new List<string>
+    {
             "Who was the most interesting person I interacted with today?",
             "What was the best part of my day?",
             "How did I see the hand of the Lord in my life today?",
@@ -676,5 +671,4 @@ public class PromptGenerator
         int index = _random.Next(_prompts.Count);
         return _prompts[index];
     }
-
 }
