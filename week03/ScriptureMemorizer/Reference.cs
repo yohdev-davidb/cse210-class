@@ -29,9 +29,14 @@ public class Reference
 
     public GetDisplayText()
     {
-        if _endVerse == -1
+        if (_endVerse > 0)
         {
-            console.WriteLine($"{_book} {_chapter} {_verse}");
+            return $"{_book} {_chapter}:{_verse}--{_endVerse}";
+        }
+
+        else
+        {
+            return $"{_book} {_chapter}:{_verse}";
         }
 
     }
