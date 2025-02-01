@@ -3,20 +3,23 @@ using System.Collections.Generic;
 using System.Text;
 
 public class word
-
-private string _text;
-private bool _isHidden;
-
-public void Hide()
 {
+    private string _text;
+    private bool _isHidden;
 
-    _isHidden = true;
+    public void Hide()
+    {
 
-}
+        _isHidden = true;
 
-public void Show()
-{
+    }
 
-    _isHidden = false;
+    public void Show()
+    {
+
+        _isHidden = false;
+
+    }
+
 
 }
