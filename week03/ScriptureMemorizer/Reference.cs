@@ -27,7 +27,7 @@ public class Reference
 
     }
 
-    public GetDisplayText()
+    public string GetDisplayText()
     {
         if (_endVerse > 0)
         {

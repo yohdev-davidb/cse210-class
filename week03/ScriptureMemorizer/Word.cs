@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-public class word
+public class Word
 {
     private string _text;
     private bool _isHidden;
